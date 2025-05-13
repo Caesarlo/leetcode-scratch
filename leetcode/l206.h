@@ -5,20 +5,19 @@
 using namespace std;
 
 
+ListNode* reverse(ListNode* cur, ListNode* pre)
+{
+	if (cur == NULL)
+		return pre;
+	ListNode* temp = cur->next;
+	cur->next = pre;
+	return reverse(temp, cur);
+}
+
 
 class Solution {
 public:
 	ListNode* reverseList(ListNode* head) {
-		ListNode* pre=NULL;
-		ListNode* cur = head;
-		ListNode* temp;
-		while (cur != NULL)
-		{
-			temp = cur->next;
-			cur->next = pre;
-			pre = cur;
-			cur = temp;
-		}
-		return pre->next;
+		return reverse(head, NULL);
 	}
 };

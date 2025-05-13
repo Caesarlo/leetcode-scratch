@@ -131,6 +131,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="l203.h" />
+    <ClInclude Include="l206.h" />
     <ClInclude Include="l209.h" />
     <ClInclude Include="l27.h" />
     <ClInclude Include="l59.h" />
@@ -138,6 +139,11 @@
     <ClInclude Include="l707.h" />
     <ClInclude Include="l977.h" />
     <ClInclude Include="ListNode.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\.gitattributes" />
+    <None Include="..\.gitignore" />
+    <None Include="..\README.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
