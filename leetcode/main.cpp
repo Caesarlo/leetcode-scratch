@@ -1,22 +1,17 @@
 #include <iostream>
 #include <vector>
-#include "l59.h"
+#include "l151.h"
+#include <string>
 using namespace std;
 
 int main()
 {
 	Solution s;
-	int n = 3;
-	vector<vector<int>> res(n, vector<int>(n, 0));
-	res=s.generateMatrix(n);
-	for (int i=0;i<n;i++)
-	{
-		for (int j=0;j<n;j++)
-		{
-			cout << res[i][j] << " ";
-		}
-		cout << "\n";
-	}
+	string str = "hello world";
+	string pre = str.substr(0, 2);
+	string post = str.substr(2, str.size() - 1);
+	cout << pre << endl;
+	cout << post << endl;
 
 	return 0;
 }

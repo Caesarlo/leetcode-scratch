@@ -47,6 +47,24 @@
     <ClInclude Include="l206.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="l54.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lcr122.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="l151.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lcr182.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lcr192.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lcr138.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\README.md">
