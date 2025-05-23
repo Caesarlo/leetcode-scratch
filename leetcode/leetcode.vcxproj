@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -102,7 +102,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
@@ -131,13 +131,25 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="l203.h" />
+    <ClInclude Include="l206.h" />
     <ClInclude Include="l209.h" />
     <ClInclude Include="l27.h" />
+    <ClInclude Include="l54.h" />
     <ClInclude Include="l59.h" />
     <ClInclude Include="l704.h" />
     <ClInclude Include="l707.h" />
     <ClInclude Include="l977.h" />
+    <ClInclude Include="lcr122.h" />
+    <ClInclude Include="l151.h" />
+    <ClInclude Include="lcr138.h" />
+    <ClInclude Include="lcr182.h" />
+    <ClInclude Include="lcr192.h" />
     <ClInclude Include="ListNode.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\.gitattributes" />
+    <None Include="..\.gitignore" />
+    <None Include="..\README.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
