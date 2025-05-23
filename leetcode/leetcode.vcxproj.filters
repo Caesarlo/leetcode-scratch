@@ -65,6 +65,18 @@
     <ClInclude Include="lcr138.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="l24.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="l19.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="l160.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="142.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\README.md">

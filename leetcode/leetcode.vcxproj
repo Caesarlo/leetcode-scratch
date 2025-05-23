@@ -130,9 +130,13 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="142.h" />
+    <ClInclude Include="l160.h" />
+    <ClInclude Include="l19.h" />
     <ClInclude Include="l203.h" />
     <ClInclude Include="l206.h" />
     <ClInclude Include="l209.h" />
+    <ClInclude Include="l24.h" />
     <ClInclude Include="l27.h" />
     <ClInclude Include="l54.h" />
     <ClInclude Include="l59.h" />
