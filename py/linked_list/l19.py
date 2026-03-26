@@ -15,4 +15,21 @@ class Solution:
         dummy_head = ListNode()
         dummy_head.next = head
 
-        for i in range()
+        fast = dummy_head
+        slow = dummy_head
+
+        while n:
+            fast = fast.next
+            n -= 1
+
+        while fast.next:
+            fast = fast.next
+            slow = slow.next
+
+        temp = slow.next
+
+        slow.next = slow.next.next
+
+        del temp
+
+        return dummy_head.next
