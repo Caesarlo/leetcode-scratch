@@ -1,33 +1,42 @@
-# LeetCode 题解仓库 🎯
+# LeetCode Scratch
 
-## 项目简介 📚
-这是一个用于记录和分享 LeetCode 题解的仓库。在这里，你可以找到各种算法题的解答，希望能帮助到你！
+用于记录刷题过程中的代码实现与练习笔记，目前主要包含 Python 与 C++ 两套实现。
 
-## 目录结构 🗂️
-- `solutions/`: 存放题解代码 💻
-- `docs/`: 存放题解文档 📝
-- `tests/`: 存放测试用例 🧪
+## 目录结构
 
-## 如何运行 🚀
-1. 克隆仓库 📦
-2. 进入 `solutions/` 目录 📂
-3. 运行 `python <题解文件名>.py` ⚡
+```text
+leetcode-scratch/
+├─ py/            # Python 题解（文件名如 l121.py）
+├─ c++/           # C++ 题解与基础结构（文件名如 l151.h / lcr122.h）
+├─ LICENSE.txt
+└─ README.md
+```
 
-## 题解统计 📊
-- 已完成题目数：42 ✨
-- 分类：动态规划、贪心算法、图论等 🎨
+## 命名规则
 
-## 联系方式 📬
-- 邮箱：example@example.com 📧
-- GitHub：[你的 GitHub 链接] 🐱
+- `l<number>`: 对应 LeetCode 题号，例如 `l55.py`、`l151.h`
+- `lcr<number>`: 对应 LeetCode LCR 系列题目，例如 `lcr122.h`
 
-## 致谢 💝
-感谢所有支持这个项目的小伙伴们！一起加油，刷题快乐！🌟 
+## 运行方式
 
-> 写题解时要保持清醒 ☕
-> 
-> Debug 时要保持耐心 🔍
-> 
-> 看题解时要保持谦虚 🙇
-> 
-> 刷题时要保持微笑 😊
+### Python
+
+在仓库根目录执行：
+
+```powershell
+python .\py\l121.py
+```
+
+### C++
+
+当前 `c++/main.cpp` 作为本地调试入口，可按需替换 `#include` 的题解头文件后编译运行：
+
+```powershell
+g++ .\c++\main.cpp -std=c++17 -O2 -o main.exe
+.\main.exe
+```
+
+## 说明
+
+- 本仓库以个人练习为主，不保证所有题解均包含完整测试用例。
+- 可在每次新增题解后，按同样命名规则新增对应文件，保持目录可检索性。

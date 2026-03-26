@@ -1,0 +1,42 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "mkdir build",
+      "type": "shell",
+      "command": "pwsh",
+      "args": [
+        "-NoProfile",
+        "-Command",
+        "New-Item -ItemType Directory -Force \"${fileDirname}\\c++\\build\" | Out-Null"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "compile active file (g++)",
+      "type": "shell",
+      "command": "C:\\Users\\35096\\AppData\\Local\\Microsoft\\WinGet\\Packages\\BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\mingw64\\bin\\g++.exe",
+      "args": [
+        "-std=c++17",
+        "-g",
+        "${file}",
+        "-o",
+        "${fileDirname}\\c++\\build\\${fileBasenameNoExtension}.exe"
+      ],
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "problemMatcher": ["$gcc"]
+    },
+    {
+      "label": "build active file (g++)",
+      "dependsOrder": "sequence",
+      "dependsOn": ["mkdir build", "compile active file (g++)"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    }
+  ]
+}
